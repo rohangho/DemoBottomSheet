@@ -1,6 +1,5 @@
 package com.demosample.demobottomsheet
 
-import android.opengl.Visibility
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -38,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                     textHind.visibility = View.GONE
                     textEng.visibility = View.GONE
                     card.visibility = View.VISIBLE
+                    layoutBottomSheet.setBackgroundResource(R.drawable.boxy_shape)
                 }
                 if (BottomSheetBehavior.STATE_COLLAPSED == i) {
                     card.visibility = View.GONE
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onSlide(view: View, v: Float) {}
         })
-        abc = findViewById(R.id.showMe);
+        abc = findViewById(R.id.showMe)
         abc.setOnClickListener{
             if(layoutBottomSheet.visibility == View.GONE)
                 layoutBottomSheet.visibility = View.VISIBLE

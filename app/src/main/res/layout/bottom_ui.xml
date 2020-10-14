@@ -7,7 +7,7 @@
     android:id="@+id/bcks"
     android:background="@drawable/rounder_shape"
     app:behavior_hideable="false"
-    android:visibility="visible"
+    android:visibility="gone"
     app:behavior_peekHeight="100dp"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
     >
