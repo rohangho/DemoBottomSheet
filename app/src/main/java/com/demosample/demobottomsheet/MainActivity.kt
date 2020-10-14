@@ -53,8 +53,8 @@ class MainActivity : AppCompatActivity() {
             override fun onSlide(view: View, v: Float) {}
         })
         abc = findViewById(R.id.showMe)
-        abc.setOnClickListener{
-            if(layoutBottomSheet.visibility == View.GONE)
+        abc.setOnClickListener {
+            if (layoutBottomSheet.visibility == View.GONE)
                 layoutBottomSheet.visibility = View.VISIBLE
             else
                 layoutBottomSheet.visibility = View.GONE
@@ -63,7 +63,9 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
+    fun removeLayout(view: View) {
+        layoutBottomSheet.visibility = View.GONE
+    }
 
 
 }
