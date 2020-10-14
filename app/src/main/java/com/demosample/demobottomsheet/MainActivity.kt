@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
                     img.visibility = View.VISIBLE
                     textHind.visibility = View.VISIBLE
                     textEng.visibility = View.VISIBLE
+                    layoutBottomSheet.setBackgroundResource(R.drawable.rounder_shape)
                 }
                 if (BottomSheetBehavior.STATE_HIDDEN == i) {
 
